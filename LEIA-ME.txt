@@ -1,0 +1,41 @@
+﻿ * @author Roberto S. Brasil
+ * @since 07/12/2018
+ * @version 1.0
+
+Esta API tem como finalidade auxiliar na representação de calendários na linguagem Java por intermédio de componentes Swing.
+
+Sua utilização é extremamente simples, basta configurar seu projeto, na parte de Java Build Path, e adicionar a API. Após, basta instanciar a classe JCalendar em seu projeto. Pronto! Agora o usuário poderá escolher uma data qualquer de um jeito intuitivo e formalizado, pois você poderá obter esta data e usar esse dado em seu projeto.
+
+Exemplo:
+ {...seu código...}
+JCalendar calendario = new JCalendar();
+
+A classe possui 2 construtores, o primeiro não possui parâmetros (como no exemplo acima), o segundo pede as coordenas (x,y) em que o calendário será posicionado. 
+
+Exemplo:
+{...seu código...}
+JCalendar calendario = new JCalendar(29,6);
+
+O JCalendar vai interromper a execução até que o usuário selecione uma data, após você poderá (via código) ver qual a data foi selecionada. Pelo fato destes dados estarem encapsulados, há métodos getters para os mesmos.
+
+Exemplo:
+{...seu código...}
+JCalendar calendario = new JCalendar();
+System.out.print(c.getDia()+"/"+g.getMes()+"/"+c.getAno());
+
+Há também a forma simplificada que faz o retorno dd/MM/yyyy, sem precisar fazer a instância do objeto. Basta chamar o método estático getData() e pronto!
+
+Exemplo
+{...seu código...}
+JCalendar.getData();
+
+Obrigado e faça bom uso!
+
+
+
+
+
+
+
+
+Deus seja louvado.

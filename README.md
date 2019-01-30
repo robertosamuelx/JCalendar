@@ -24,7 +24,7 @@ O JCalendar vai interromper a execução até que o usuário selecione uma data,
 Exemplo:
 {...seu código...}
 JCalendar calendario = new JCalendar();
-System.out.print(c.getDia()+"/"+g.getMes()+"/"+c.getAno());
+System.out.print(calendario.getDia()+"/"+calendario.getMes()+"/"+calendario.getAno());
 
 Há também a forma simplificada que faz o retorno dd/MM/yyyy, sem precisar fazer a instância do objeto. Basta chamar o método estático getData() e pronto!
 
